@@ -10,8 +10,8 @@ git push --mirror https://github.com/your-github-username/mp2.git
 cd ..
 rm -rf mp2_starter.git
 
-git clone https://github.com/your-github-username/mp2.git
-cd mp2
+git clone https://github.com/uiuc-web-programming/mp2_starter.git
+cd mp2_starter
 npm install
 bower install
 grunt compass
@@ -36,4 +36,4 @@ grunt
 
 When cloning to the server, run the setup commands again to ensure all the files are properly compiled.
 
-Also, if you have problems debugging your JavaScript due to uglification, you can disable it by commenting out line 47 of `gruntfile.js` and uncommenting line 48. Your final submission should work with uglification though.
+Also, if you have problems debugging your JavaScript due to uglification, you can disable it by commenting out line 46 of `gruntfile.js` and uncommenting line 47. Your final submission should work with uglification though.
