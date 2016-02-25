@@ -80,14 +80,19 @@ html body{
 		margin-top: 60%;
 		font-size: 3em;
       }
+    @media screen and (max-width: 450px) {
+		margin-top: 60%;
+		font-size: 2em;
+      }
+
 }
 
 .footer{
 	background: #f7f7f7;
-	height: 20vh;
+	height: 25vh;
 	.footer-icon-up{
 		a{
-			font-size: 1em;
+			font-size: 1.5em;
 			text-decoration: none;
 			color: black;
 			animation-name: attention;
@@ -100,6 +105,22 @@ html body{
 			animation-iteration-count: 0;
 			opacity: 1;
 			font-size: 1.6em;
+		}
+		padding-top: 2.5%;
+	}
+	.footer-social-media{
+		a{
+			font-size: 1.5em;
+			text-decoration: none;
+			color: #ff0030;
+			padding-top: 25px;
+			@media screen and (max-width: 450px) {
+				font-size: 1em;
+				padding-top: 15px;
+      		}
+		}
+		a:hover{
+			color:black;
 		}
 		padding-top: 2.5%;
 	}
