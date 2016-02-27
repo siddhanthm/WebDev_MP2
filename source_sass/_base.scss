@@ -104,6 +104,15 @@ html body{
 		padding: 30px;
     }
     color:white;
+
+    i{
+    	font-size: 7em;
+    	padding: 20px;
+    }
+    .intro_title{
+		padding: 10px;
+		font-size: 1.5em;
+    }
 }
 
 #skills{
@@ -115,6 +124,10 @@ html body{
 		padding: 30px;
     }
     color:#2c3e50;
+
+    .skills_heading{
+    	font-size: 3.5em;
+    }
 }
 
 #work{
@@ -130,7 +143,7 @@ html body{
 
 
 .footer{
-	background: #f7f7f7;
+	background: #EEE;
 	min-height: 25vh;
 	padding: 10px;
 	.footer-icon-up{
