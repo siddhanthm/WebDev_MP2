@@ -111,7 +111,7 @@ html body{
     }
     .intro_title{
 		padding: 10px;
-		font-size: 1.5em;
+		font-size: 1.3em;
     }
 }
 
@@ -125,8 +125,28 @@ html body{
     }
     color:#2c3e50;
 
+    .skills_heading_box{
+    	padding: 10px;
+    }
+
     .skills_heading{
     	font-size: 3.5em;
+    }
+
+    .skills_heading_minor{
+    	font-size: 1.7em;
+    	border-bottom: 5px solid #2c3e50;
+    }
+
+    .skills_images{
+    	padding: 40px;
+    	@media screen and (max-width: 640px) {
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+
+    	}
     }
 }
 
