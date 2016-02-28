@@ -1,5 +1,7 @@
 // Write any custom javascript functions here
 $(document).ready(function(){
+    
+    //carousal
     $('.fade').slick({
   		dots: true,
   		infinite: true,
@@ -8,7 +10,7 @@ $(document).ready(function(){
   		cssEase: 'linear'
 	});
 
-
+    //random front-page picture
     var number = Math.floor((Math.random()*6) + 1);
     if(number ==1){
     	$(".front-page").css({"background-image": "url('../data/pics/home1.jpg')"});
@@ -24,8 +26,7 @@ $(document).ready(function(){
     	$(".front-page").css({"background-image": "url('../data/pics/home6.jpg')"});
     }
 
-
-
+    //sizing boxes
 	var boxes = $(".skills_box");
 	boxes.each(function(){
 		var width = $(this).width();
@@ -37,6 +38,7 @@ $(document).ready(function(){
 		var width = $(this).width();
 		$(this).css({"height": width+"px"});
 	});
+	
 	//hide navbar on front page
 	$(window).on("scroll", function(){
 		if($(window).scrollTop() > $(".front-page").outerHeight()){
@@ -55,7 +57,7 @@ $(document).ready(function(){
 	//scroll to front-page
 	$(".fa-angle-double-up").on("click", function(e){
 		e.preventDefault();
-		$('html, body').animate({scrollTop:0}, "slow", "swing");
+		$('html, body').animate({scrollTop:0}, 1200, "swing");
 	});
 
 	//scroll to intro
@@ -80,7 +82,7 @@ $(document).ready(function(){
 		}, "slow", "swing");
 	});
 
-	//active
+	//active navbar
 	$(window).scroll(function(){
 		var sections = $(".heading");
 		sections.each(function(){
@@ -94,8 +96,7 @@ $(document).ready(function(){
 
 	});
 
-
-
+	//animations
 	var $animation_elements = $('.animation-element');
 	var $window = $(window);
 
@@ -123,7 +124,7 @@ $(document).ready(function(){
   		});
 	}
 
-
+	//modals
 	$(".goldman").click(function(){
 		$('.goldmanwindow').css('opacity', '0').css('top', '70%').css('left', '50%').fadeTo(500, 1);
 	});
@@ -155,4 +156,5 @@ $(document).ready(function(){
 		e.preventDefault();
         $('.cs173window').fadeOut(250, function(){ $(this).css('top', '-1000px').css('left', '-1000px'); });
 	});
+	
 });
