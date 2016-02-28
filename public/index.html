@@ -7,8 +7,11 @@
   <link rel="icon" href="./data/pics/favicon.png" type="image/png">
 
   <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
   <link rel="stylesheet" href="./foundation6_lib/css/foundation.css">
   <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 <body>
@@ -18,8 +21,8 @@
         <ul class="medium-horizontal menu">
           <li><a href="#intro">Intro</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#work">Work</a></li>
           <li><a href="#interest">Interest</a></li>
+          <li><a href="#work">Work</a></li>
         </ul>
       </div>
     </center>
@@ -138,26 +141,44 @@
       </div>
   </section>
   
+  <section class="row heading" id = "interest">
+    <div class="interest_heading columns text-center small-12 small-centered">Interest</div>
+    <div class="fade small-10 large-8 small-centered text-center">
+      <div class="tennis">
+      </div>
+      <div class="canoeing">
+      </div>
+      <div class="cycling">
+      </div>
+      <div class="sherlock">
+      </div>
+      <div class="plane">
+      </div>
+      <div class="got">
+      </div>
+    </div>
+  </section>
+
   <section class="row heading" id = "work">
     <div class="work_heading columns text-center small-12 small-centered">Work</div>
     <div class="columns small-centered small-12 text-center work_heading_box">
       <div class="columns small-centered large-centered small-12 large-12 text-center work_images">
-        <div class="columns text-center small-12 large-3 medium-6 work_box">
+        <div class="columns text-center small-12 large-6 medium-6 work_box">
           <div class="text-center large-12 small-12 work_box_inner animation-element goldman">
             <p>Goldman Sachs</p>
           </div>
         </div>
-        <div class="columns text-center small-12 large-3 medium-6 work_box">
+        <div class="columns text-center small-12 large-6 medium-6 work_box">
           <div class="text-center large-12 small-12 work_box_inner animation-element tatacomm">
             <p>Tata Communication</p>
           </div>
         </div>
-        <div class="columns text-center small-12 large-3 medium-6 work_box">
+        <div class="columns text-center small-12 large-6 medium-6 work_box">
           <div class="text-center large-12 small-12 work_box_inner animation-element ece110">
             <p>Univeristy of Illinois at Urbana Champaign</p>
           </div>
         </div>
-        <div class="columns text-center small-12 large-3 medium-6 work_box">
+        <div class="columns text-center small-12 large-6 medium-6 work_box">
           <div class="text-center large-12 small-12 work_box_inner animation-element cs173">
             <p>Univeristy of Illinois at Urbana Champaign</p>
           </div>
@@ -199,10 +220,6 @@
     </div>
 
   </section>
-  <section class="row heading" id = "interest">
-    <div class="interest_heading columns text-center small-12 small-centered">Interest</div>
-  </section>
-
   <section class="footer">
     <div class="row footer-icon-up">
       <div class="small-centered large-centered small-8 large-6 text-center columns"> 
@@ -225,6 +242,8 @@
   <script>
     $(document).foundation();
   </script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
+
 </body>
 </html>
