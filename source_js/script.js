@@ -1,9 +1,27 @@
 // Write any custom javascript functions here
 $(document).ready(function(){
+    
+    var number = Math.floor((Math.random()*4) + 1);
+    if(number ==1){
+    	$(".front-page").css({"background-image": "url('../data/pics/home1.jpg')"});
+    }else if(number ==2){
+    	$(".front-page").css({"background-image": "url('../data/pics/home2.jpeg')"});
+    }else if(number == 3){
+    	$(".front-page").css({"background-image": "url('../data/pics/home3.jpg')"});
+    }else{
+    	$(".front-page").css({"background-image": "url('../data/pics/home4.jpg')"});
+    }
+
 
 
 	var boxes = $(".skills_box");
 	boxes.each(function(){
+		var width = $(this).width();
+		$(this).css({"height": width+"px"});
+	});
+
+	var boxes1 = $(".work_box");
+	boxes1.each(function(){
 		var width = $(this).width();
 		$(this).css({"height": width+"px"});
 	});
@@ -14,6 +32,12 @@ $(document).ready(function(){
 
 		}else{
 			$("nav").removeClass("visible");
+		}
+
+		if($(window).scrollTop() > $(".front-page").outerHeight() + $(window).height()/10){
+			$("nav").addClass("top-bar-edit");
+		}else{
+			$("nav").removeClass("top-bar-edit");
 		}
 	});
 	//scroll to front-page
@@ -86,4 +110,37 @@ $(document).ready(function(){
     			}
   		});
 	}
+
+
+	$(".goldman").click(function(){
+		$('.goldmanwindow').css('opacity', '0').css('top', '70%').css('left', '50%').fadeTo(500, 1);
+	});
+	$("a.close_goldman").click(function(e){
+		e.preventDefault();
+        $('.goldmanwindow').fadeOut(250, function(){ $(this).css('top', '-1000px').css('left', '-1000px'); });
+	});
+
+	$(".tatacomm").click(function(){
+		$('.tatacommwindow').css('opacity', '0').css('top', '70%').css('left', '50%').fadeTo(500, 1);
+	});
+	$("a.close_tatacomm").click(function(e){
+		e.preventDefault();
+        $('.tatacommwindow').fadeOut(250, function(){ $(this).css('top', '-1000px').css('left', '-1000px'); });
+	});
+
+	$(".ece110").click(function(){
+		$('.ece110window').css('opacity', '0').css('top', '70%').css('left', '50%').fadeTo(500, 1);
+	});
+	$("a.close_ece110").click(function(e){
+		e.preventDefault();
+        $('.ece110window').fadeOut(250, function(){ $(this).css('top', '-1000px').css('left', '-1000px'); });
+	});
+
+	$(".cs173").click(function(){
+		$('.cs173window').css('opacity', '0').css('top', '70%').css('left', '50%').fadeTo(500, 1);
+	});
+	$("a.close_cs173").click(function(e){
+		e.preventDefault();
+        $('.cs173window').fadeOut(250, function(){ $(this).css('top', '-1000px').css('left', '-1000px'); });
+	});
 });
