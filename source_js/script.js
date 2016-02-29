@@ -31,17 +31,20 @@ $(document).ready(function(){
     }
 
     //sizing boxes
-	var boxes = $(".skills_box");
-	boxes.each(function(){
-		var width = $(this).width();
-		$(this).css({"height": width+"px"});
-	});
+    $(window).on("resize ready load", function(){
+    		var boxes = $(".skills_box");
+			boxes.each(function(){
+			var width = $(this).width();
+			$(this).css({"height": width+"px"});
+		});
 
-	var boxes1 = $(".work_box");
-	boxes1.each(function(){
-		var width = $(this).width();
-		$(this).css({"height": width+"px"});
-	});
+		var boxes1 = $(".work_box");
+			boxes1.each(function(){
+			var width = $(this).width();
+			$(this).css({"height": width+"px"});
+		});
+    });
+
 	
 	//hide navbar on front page
 	$(window).on("scroll", function(){
