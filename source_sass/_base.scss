@@ -273,7 +273,7 @@ html body{
 		margin-bottom: 0px;
 	}
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 1024px) {
 		.work_video{
 			@include go_away();
 		}
@@ -291,7 +291,7 @@ html body{
     	}
 	}
 
-	@media screen and (min-width: 640px){
+	@media screen and (min-width: 1025px){
 		.icon_video{
 			@include go_away();
 		}
@@ -418,6 +418,13 @@ html body{
 	p{
 		font-size:1rem;
 		color:grey;
+	}
+	.info_job{
+		color:$black;
+		font-size:1rem;
+		@media screen and (max-width: 450px) {
+			@include go_away();
+      	}
 	}
 	a.close{
 		width: 30px;
