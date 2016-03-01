@@ -210,6 +210,12 @@ html body{
 			padding-bottom: 40px;
 
     	}
+    	@media screen and (max-width: 450px) {
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+      	}
     }
     .work_box{
     	padding: 25px;
@@ -226,6 +232,10 @@ html body{
    			@media screen and (max-width: 640px) {
 				font-size: 1.5em;
       		}
+      		@media screen and (max-width: 450px) {
+				font-size: 1.1em;
+      		}
+
 		}
     }
 	.work_box_inner:hover{
@@ -293,6 +303,53 @@ html body{
 }
 
 
+
+
+#interest{
+	@include section($background-blue);
+    color:$white;
+    min-height: $full_height;
+    position: relative;
+
+    .interest_heading{
+    	font-size: $heading_size;
+    }
+
+    .fade{
+    	padding-top: 30px;
+    	padding-bottom: 30px;
+		@include vertical_center();
+    }
+
+    .tennis{
+    	@include pictures_interest("../data/pics/tennis.jpg");
+    }
+
+    .sherlock{
+    	@include pictures_interest("../data/pics/sherlock.jpg");
+    }
+
+    .canoeing{
+    	@include pictures_interest("../data/pics/canoe.jpg");
+    }
+
+    .cycling{
+    	@include pictures_interest("../data/pics/cycling.jpg");
+    }
+    .plane{
+    	@include pictures_interest("../data/pics/plane.jpg");
+    }
+
+    .got{
+    	@include pictures_interest("../data/pics/got.jpg");
+    }
+
+    .slick-track{
+    	height: 60vh;
+    }
+
+}
+
 .footer{
 	background: #EEE;
 	min-height: 25vh;
@@ -340,51 +397,6 @@ html body{
 			@include view_animation();
 		}
 	}
-}
-
-#interest{
-	@include section($background-blue);
-    color:$white;
-    min-height: $full_height;
-    position: relative;
-
-    .interest_heading{
-    	font-size: $heading_size;
-    }
-
-    .fade{
-    	padding-top: 30px;
-    	padding-bottom: 30px;
-		@include vertical_center();
-    }
-
-    .tennis{
-    	@include pictures_interest("../data/pics/tennis.jpg");
-    }
-
-    .sherlock{
-    	@include pictures_interest("../data/pics/sherlock.jpg");
-    }
-
-    .canoeing{
-    	@include pictures_interest("../data/pics/canoe.jpg");
-    }
-
-    .cycling{
-    	@include pictures_interest("../data/pics/cycling.jpg");
-    }
-    .plane{
-    	@include pictures_interest("../data/pics/plane.jpg");
-    }
-
-    .got{
-    	@include pictures_interest("../data/pics/got.jpg");
-    }
-
-    .slick-track{
-    	height: 60vh;
-    }
-
 }
 
 .window{
