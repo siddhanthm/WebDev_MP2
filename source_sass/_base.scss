@@ -116,12 +116,12 @@ html body{
 
     .intro_hash{
     	opacity: $no_opacity;
-    	@media screen and (max-width: 450px) {
+    	@media screen and (max-width: 640px) {
 			opacity: $full_opacity;
       }
     }
     .in-view{
-    	@media screen and (min-width: 640px){
+    	@media screen and (min-width: 641px){
 			@include view_animation();
 		}
     }
