@@ -117,7 +117,9 @@ html body{
     	opacity: $no_opacity;
     }
     .in-view{
-		@include view_animation();
+    	@media screen and (min-width: 640px){
+			@include view_animation();
+		}
     }
 
     .intro_text{
