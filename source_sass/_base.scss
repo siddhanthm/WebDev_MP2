@@ -17,7 +17,7 @@ html body{
 	0% {opacity: $no_opacity;}
 	100% {opacity: $full_opacity;}
 }
-
+//nav bar
 .top-bar{
 	position: fixed;
 	width: $full-width;
@@ -40,16 +40,17 @@ html body{
     	}
 	}
 }
-
+//change nav-bar height while scrolling
 .top-bar-edit{
 	height: 60px;
 }
-
+//make nav-bar visible after home-page
 .visible{
 	z-index: 2;
 	opacity: .95;
 }
 
+//image and dimentions
 .front-page{
 	height: $full_height;
 	width: $full-width;
@@ -58,7 +59,7 @@ html body{
 	@include front_page();
 	position: relative;
 }
-
+//text and arrow
 .front-page-text{
 	@include vertical_center();
 	color: $white;
@@ -95,7 +96,7 @@ html body{
 
 }
 
-
+//intro section
 #intro{
 	@include section($background-blue);
     color:$white;
@@ -127,7 +128,7 @@ html body{
     	float: none;
     }
 }
-
+//skills section
 #skills{
 	@include section($white);
     color:$background-blue;
@@ -186,7 +187,7 @@ html body{
 
 
 }
-
+//work section
 #work{
 	@include section($white);
     color:$background-blue;
@@ -304,9 +305,7 @@ html body{
     }
 }
 
-
-
-
+//interest section
 #interest{
 	@include section($background-blue);
     color:$white;
@@ -351,7 +350,7 @@ html body{
     }
 
 }
-
+//footer
 .footer{
 	background: #EEE;
 	min-height: 25vh;
@@ -401,6 +400,7 @@ html body{
 	}
 }
 
+//modal
 .window{
 	position: fixed;
 	z-index: 10000;
