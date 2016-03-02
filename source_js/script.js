@@ -14,20 +14,20 @@ $(document).ready(function(){
     if($(window).width()>640){
 	    var number = Math.floor((Math.random()*6) + 1);
 	    if(number ==1){
-	    	$(".front-page").css({"background-image": "url('../data/pics/home1.jpg')"});
+	    	$(".front-page").css({"background-image": "url('./data/pics/home1.jpg')"});
 	    }else if(number ==2){
-	    	$(".front-page").css({"background-image": "url('../data/pics/home2.jpeg')"});
+	    	$(".front-page").css({"background-image": "url('./data/pics/home2.jpeg')"});
 	    }else if(number == 3){
-	    	$(".front-page").css({"background-image": "url('../data/pics/home3.jpg')"});
+	    	$(".front-page").css({"background-image": "url('./data/pics/home3.jpg')"});
 	    }else if(number ==4){
-	    	$(".front-page").css({"background-image": "url('../data/pics/home4.jpg')"});
+	    	$(".front-page").css({"background-image": "url('./data/pics/home4.jpg')"});
 	    }else if(number == 5){
-	    	$(".front-page").css({"background-image": "url('../data/pics/home2.jpeg')"});
+	    	$(".front-page").css({"background-image": "url('./data/pics/home2.jpeg')"});
 	    }else{
-	    	$(".front-page").css({"background-image": "url('../data/pics/home6.jpg')"});
+	    	$(".front-page").css({"background-image": "url('./data/pics/home6.jpg')"});
 	    }
 	}else{
-		$(".front-page").css({"background-image": "url('../data/pics/home_s.jpg')"});
+		$(".front-page").css({"background-image": "url('./data/pics/home_s.jpg')"});
     }
 
     //sizing boxes
